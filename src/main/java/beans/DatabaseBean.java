@@ -39,7 +39,7 @@ public class DatabaseBean implements Serializable {
     public DatabaseBean(){
         try{
             Class.forName(driver);
-            conn = DriverManager.getConnection(dbURL, "postgres", "password");
+            conn = DriverManager.getConnection(dbURL);
         }catch(SQLException sqle){
             System.out.println("SQL Exception thrown: " + sqle.getMessage());
         }catch(ClassNotFoundException cnfe){
