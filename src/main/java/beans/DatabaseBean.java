@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
 
 public class DatabaseBean implements Serializable {
     
-    String dbURL = "jdbc:postgresql://localhost:5432/Debugged"; 
+    String dbURL = System.getenv("JDBC_DATABASE_URL"); 
     String driver = "org.postgresql.Driver";
     private Connection conn;
     Statement stat;
