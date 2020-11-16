@@ -1,0 +1,10 @@
+beans\DatabaseBean.class
+servlets\ChangePassword.class
+servlets\AddComment.class
+servlets\LogOff.class
+servlets\ChangeUser.class
+servlets\ValidateUser.class
+servlets\CreateUser.class
+servlets\AddReply.class
+servlets\LogginValidator.class
+servlets\AddTopic.class
