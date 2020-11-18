@@ -7,6 +7,7 @@ package beans;
 import java.sql.*;
 import java.io.*;
 import java.text.SimpleDateFormat;
+import java.util.Properties;
 import java.util.regex.Pattern;
 
 
@@ -20,7 +21,7 @@ import java.util.regex.Pattern;
 
 public class DatabaseBean implements Serializable {
     
-    String dbURL = System.getenv("JDBC_DATABASE_URL"); 
+    String dbURL = "jdbc:postgresql://localhost:5432/Debugged"; 
     String driver = "org.postgresql.Driver";
     private Connection conn;
     Statement stat;
@@ -35,11 +36,10 @@ public class DatabaseBean implements Serializable {
     private String[][] replyFeed;
     private boolean[][] success;
     
-    
-    public DatabaseBean(){
+    public DatabaseBean(){       
         try{
             Class.forName(driver);
-            conn = DriverManager.getConnection(dbURL);
+            conn = DriverManager.getConnection(dbURL, "postgres", "password");
         }catch(SQLException sqle){
             System.out.println("SQL Exception thrown: " + sqle.getMessage());
         }catch(ClassNotFoundException cnfe){

@@ -5,6 +5,7 @@ servlets\LogOff.class
 servlets\ChangeUser.class
 servlets\ValidateUser.class
 servlets\CreateUser.class
+servlets\Search.class
 servlets\AddReply.class
 servlets\LogginValidator.class
 servlets\AddTopic.class
