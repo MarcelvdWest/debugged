@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
-
     <servlet>
         <servlet-name>LogginValidator</servlet-name>
         <servlet-class>servlets.LogginValidator</servlet-class>
@@ -41,10 +40,6 @@
         <servlet-name>Search</servlet-name>
         <servlet-class>servlets.Search</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>Home</servlet-name>
-        <servlet-class>servlets.Home</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>LogginValidator</servlet-name>
         <url-pattern>/LogginValidator</url-pattern>
@@ -84,10 +79,6 @@
     <servlet-mapping>
         <servlet-name>Search</servlet-name>
         <url-pattern>/Search</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Home</servlet-name>
-        <url-pattern>/</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

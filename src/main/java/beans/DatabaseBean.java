@@ -47,6 +47,7 @@ public class DatabaseBean implements Serializable {
         }
         
     }
+    
     /**
      * Gets the connection to the database.
      * 
